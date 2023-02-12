@@ -4,19 +4,19 @@
     
 How to run?
 ```
-1 git clone https://github.com/TechLabs-Dortmund/world-wide-wohnung.git
+git clone https://github.com/TechLabs-Dortmund/world-wide-wohnung.git
 
-2 cd backend
+cd backend
 
-3 python -m venv env 
+python -m venv env 
 
-4 source env\bin\activate 
+source env\bin\activate 
 
-5 pip install -r .\requirements.txt
+pip install -r .\requirements.txt
 
-6 uvicorn main:app --reload     #start server
+uvicorn main:app --reload     #start server ```
 
-7 visit  https://127.0.0.1:8000/docs
+visit  https://127.0.0.1:8000/docs
 
 
 
