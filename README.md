@@ -1,6 +1,6 @@
 # World-Wide-Wohnung
-<p align="center">
-  <img src="(https://user-images.githubusercontent.com/96614838/218120318-8bce4c1e-897a-48f9-ae26-a06eaaad088c.jpg" width="350" title="hover text">
+<p>
+  <img src="(https://user-images.githubusercontent.com/96614838/218120318-8bce4c1e-897a-48f9-ae26-a06eaaad088c.jpg" width="500">
 </p>
 
 ```bash
@@ -16,6 +16,4 @@ pip install -r .\requirements.txt
 
 uvicorn main:app --reload     #start server 
 
-visit  https://127.0.0.1:8000/docs ```
-
-![final!](https://user-images.githubusercontent.com/96614838/218120318-8bce4c1e-897a-48f9-ae26-a06eaaad088c.jpg)
+visit  https://127.0.0.1:8000/docs 
