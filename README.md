@@ -14,7 +14,7 @@ source env\bin\activate
 
 pip install -r .\requirements.txt
 
-uvicorn main:app --reload     #start server ```
+uvicorn main:app --reload     #start server
 
 visit  https://127.0.0.1:8000/docs
 
