@@ -1,6 +1,9 @@
 # World-Wide-Wohnung
+<p align="center">
+  <img src="(https://user-images.githubusercontent.com/96614838/218120318-8bce4c1e-897a-48f9-ae26-a06eaaad088c.jpg" width="350" title="hover text">
+</p>
 
-```
+```bash
 git clone https://github.com/TechLabs-Dortmund/world-wide-wohnung.git
 
 cd backend
