@@ -1,0 +1,17 @@
+uvicorn
+fastapi
+jinja2
+
+aiofiles
+
+psycopg2
+sqlalchemy
+
+
+python-dotenv
+
+
+pydantic[email]
+
+
+passlib[bcrypt]
