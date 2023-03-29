@@ -1,0 +1,85 @@
+{% extends "shared/base.html" %}
+
+
+{% block title %}
+  <title>Create a House Post</title>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="text-danger font-weight-bold">
+        {% for error in errors %}
+          <li>{{error}}</li>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="row my-5">
+      <h3 class="text-center display-4">Create a House Post</h3>
+      <form method="POST">
+        <div class="mb-3">
+          <input type="number" required class="form-control" name="user_id" value="{{user_id}}" placeholder="User Id here">
+        </div>
+        <div class="mb-3">
+          <input type="text" required class="form-control" name="title" value="{{title}}" placeholder=" Title here">
+        </div>
+        <div class="mb-3">
+          <input type="number" required placeholder="Price of the Rent" name="rent" value="{{rent}}" class="form-control">
+        </div>
+        <div class="mb-3">
+          <input type="number" required placeholder="Total number of the rooms" name="no_rooms" value="{{no_rooms}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="number" required placeholder="Size of the flat" name="size" value="{{size}}" class="form-control">
+        </div>
+        <div class="mb-3">
+          <input type="number" required placeholder="Additional Cost" name="additional_cost" value="{{additional_cost}}" class="form-control">
+        </div>
+        <div class="mb-3">
+          <input type="number" required placeholder="Total Rent" name="total_rent" value="{{total_rent}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="number" required placeholder="Maximum number of people that can stay at this flat? " name="max_flatmates" value="{{max_flatmates}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="number" required placeholder="There exist already people in this flat?" name="exist_fmates" value="{{exist_fmates}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" required placeholder="Type of the heating?" name="heating_type" value="{{heating_type}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="number" required placeholder="Cost of Heating per month" name="heating_cost" value="{{heating_cost}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" required placeholder="City" name="city" value="{{city}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" required placeholder="Addres" name="adress" value="{{adress}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="number" required placeholder="Zipcode" name="zipcode" value="{{zipcode}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="number" required placeholder="Minumum duration(in month) that this flat can be rented" name="min_duration" value="{{min_duration}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" required placeholder="Smoking allowed? Answer it as True or False" name="smoking_allowed" value="{{smoking_allowed}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" required placeholder="Is there a parking place? " name="parking" value="{{parking}}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <input type="text" required placeholder="Is this flat posted by landlord or tenant/flatmate " name="postedby" value="{{postedby}}" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+          <textarea class="form-control" required name="description" id="exampleFormControlTextarea1" rows="3">{{description}}</textarea>
+          <div id="help" class="form-text">Please provide complete House description,requirements,perks and benefits.</div>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+  {% endblock %}
