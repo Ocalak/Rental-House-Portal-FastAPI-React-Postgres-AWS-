@@ -35,10 +35,10 @@ from sqlalchemy import text,create_engine
 
 
 session1 = boto3.Session(
-    aws_access_key_id='AKIAQPJD7WM6TR724UV2',
-    aws_secret_access_key='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'
+    aws_access_key_id='xxxxx',
+    aws_secret_access_key='xxxxx'
 )
-S3_BUCKET_NAME = "ocalak11"
+S3_BUCKET_NAME = "xxxx"
 s3 = session1.resource("s3")
 bucket = s3.Bucket(S3_BUCKET_NAME)
 
@@ -269,7 +269,7 @@ async def search_houses(rent:int=None,
 
 
 
-#api="AIzaSyBEXsQDjR-U8jrI_K51JXb4enPHXevB2i0"
+#api="xxxxxx"
 
 
 
