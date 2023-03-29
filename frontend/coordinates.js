@@ -4,8 +4,8 @@ const fetch = require('node-fetch');
 const client = new Client({
   user: 'postgres',
   host: 'localhost',
-  database: 'debug4',
-  password: 'Ocal0151!',
+  database: 'xxxxxxxx',
+  password: 'xxxxxxxx!',
   port: 5432,
 });
 
@@ -17,7 +17,7 @@ async function updateHouseCoordinates() {
 
     for (const house of houses) {
       const zipCode = house.zipcode;
-      const url = `https://maps.googleapis.com/maps/api/geocode/json?address=DE${zipCode}&key=AIzaSyCiHUCayndjydekEx_zBbRMapM6cEAtQN4`;
+      const url = `https://maps.googleapis.com/maps/api/geocode/json?address=DE${zipCode}&key=xxxxxxxxxxxxx`;
       const response = await fetch(url);
       const data = await response.json();
       const location = data.results[0].geometry.location;
