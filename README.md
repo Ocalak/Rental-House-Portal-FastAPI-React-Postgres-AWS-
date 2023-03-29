@@ -3,7 +3,7 @@
 
 
 ```bash
-git clone https://github.com/TechLabs-Dortmund/world-wide-wohnung.git
+git clone[ https://github.com/Ocalak/world-wide-wohnung.git](https://github.com/Ocalak/World-Wide-Wohnung)
 
 cd backend
 
