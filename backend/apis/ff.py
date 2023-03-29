@@ -3,7 +3,7 @@ from sqlalchemy import Column, Integer, String, Boolean,Date, ForeignKey
 from fastapi.encoders import jsonable_encoder
 
 import requests
-api_key = "079c87cc1e27ffc93ba66449c5e9a6b6"
+api_key = "x"
 countrycode = "DE"
 zip_code= 47226
 adress="Bertastrasse 19"
